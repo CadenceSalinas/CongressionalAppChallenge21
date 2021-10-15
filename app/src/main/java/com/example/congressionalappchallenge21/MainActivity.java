@@ -23,14 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v)
             {
-
-                // Intents are objects of the android.content.Intent type. Your code can send them
-                // to the Android system defining the components you are targeting.
-                // Intent to start an activity called ThirdActivity with the following code:
-
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-
-                // start the activity connect to the specified class
                 startActivity(intent);
             }
         });
