@@ -28,10 +28,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }//end onCreate
-
-    public void playClick(View v)
-    {
-        Toast.makeText(this, "You clicked play", Toast.LENGTH_SHORT).show();
-        Log.i("info", "The user clicked play");
-    }
 }
