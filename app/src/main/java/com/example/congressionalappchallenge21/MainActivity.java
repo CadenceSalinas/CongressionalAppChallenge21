@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         playButton = (Button)findViewById(R.id.play);
 
+        String value="Hello world";
+        Intent test = new Intent(MainActivity.this, MainActivity2.class);
+        test.putExtra("key",value);
+
         playButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v)
