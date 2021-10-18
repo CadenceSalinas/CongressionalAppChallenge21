@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v)
             {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(intent);
+                Intent questionScreen = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(questionScreen);
             }
         });
     }//end onCreate
