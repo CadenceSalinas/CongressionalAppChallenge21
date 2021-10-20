@@ -19,16 +19,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         playButton = (Button)findViewById(R.id.play);
 
-        String value="Hello world";
+        String value = "Apple";
         Intent test = new Intent(MainActivity.this, MainActivity2.class);
         test.putExtra("key",value);
+        //startActivity(test);
 
         playButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v)
             {
-                Intent questionScreen = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(questionScreen);
+//                Intent questionScreen = new Intent(MainActivity.this, MainActivity2.class);
+//                startActivity(questionScreen);
+                startActivity(test);
+                //Log.i("info", "ffff " + value);
             }
         });
     }//end onCreate
