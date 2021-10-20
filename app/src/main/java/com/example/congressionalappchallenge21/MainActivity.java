@@ -22,16 +22,12 @@ public class MainActivity extends AppCompatActivity {
         String value = "Apple";
         Intent test = new Intent(MainActivity.this, MainActivity2.class);
         test.putExtra("key",value);
-        //startActivity(test);
 
         playButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v)
             {
-//                Intent questionScreen = new Intent(MainActivity.this, MainActivity2.class);
-//                startActivity(questionScreen);
                 startActivity(test);
-                //Log.i("info", "ffff " + value);
             }
         });
     }//end onCreate

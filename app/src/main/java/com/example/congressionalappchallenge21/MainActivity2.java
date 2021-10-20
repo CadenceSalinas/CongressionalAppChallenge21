@@ -20,13 +20,9 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         backButton = (Button)findViewById(R.id.back);
 
-//        Bundle extras = getIntent().getExtras();
           value = getIntent().getStringExtra("key");
-//        if (extras != null) {
-//            value = extras.getString("key");
             TextView setQuestion = (TextView) findViewById(R.id.question);
             setQuestion.setText(value);
-//        }
 
         backButton.setOnClickListener(new View.OnClickListener() {
 
@@ -37,10 +33,4 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     } //end onCreate
-
-//    public void testClick(View v)
-//    {
-//        TextView setQuestion = (TextView) findViewById(R.id.question);
-//        setQuestion.setText(value + ".");
-//    }//end testClick
 }
