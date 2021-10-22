@@ -9,9 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     Button playButton;
+
+    TextInputLayout userInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +23,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         playButton = (Button)findViewById(R.id.play);
 
-        String value = "Apple";
+        userInput = findViewById(R.id.user);
+        String value = userInput.getHint() + "";
+
+        // String value = "applesauce";
         Intent test = new Intent(MainActivity.this, MainActivity2.class);
         test.putExtra("key",value);
+
 
         playButton.setOnClickListener(new View.OnClickListener() {
 
