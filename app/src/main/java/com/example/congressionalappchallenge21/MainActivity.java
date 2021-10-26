@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button playButton;
     EditText mEdit;
-    String a;
+    String setQuestion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +31,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 mEdit = (EditText)findViewById(R.id.editText);
-                a = mEdit.getText().toString();
 
-                String value = a;
+                //question
+                setQuestion = mEdit.getText().toString();
+                String value = setQuestion;
+
+                //answers
+
+
+
                 Intent test = new Intent(MainActivity.this, MainActivity2.class);
                 test.putExtra("key",value);
                 startActivity(test);

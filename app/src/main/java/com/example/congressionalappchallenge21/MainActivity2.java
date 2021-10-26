@@ -12,6 +12,11 @@ import android.widget.TextView;
 public class MainActivity2 extends AppCompatActivity {
 
     Button backButton;
+    Button answer1;
+    Button answer2;
+    Button answer3;
+    Button answer4;
+
     String value;
 
     @Override
@@ -20,9 +25,12 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         backButton = (Button)findViewById(R.id.back);
 
-          value = getIntent().getStringExtra("key");
-            TextView setQuestion = (TextView) findViewById(R.id.question);
-            setQuestion.setText(value);
+        value = getIntent().getStringExtra("key");
+        TextView setQuestion = (TextView) findViewById(R.id.question);
+        setQuestion.setText(value);
+
+        answer1 = (Button)findViewById(R.id.answer1);
+        answer1.setText("Click Me !");
 
         backButton.setOnClickListener(new View.OnClickListener() {
 
