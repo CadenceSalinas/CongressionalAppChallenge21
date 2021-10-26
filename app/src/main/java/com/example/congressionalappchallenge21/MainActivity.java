@@ -15,18 +15,13 @@ public class MainActivity extends AppCompatActivity {
 
     Button playButton;
 
-    TextInputLayout userInput;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         playButton = (Button)findViewById(R.id.play);
 
-        userInput = findViewById(R.id.user);
-        String value = userInput.getHint() + "";
-
-        // String value = "applesauce";
+        String value = "applesauce";
         Intent test = new Intent(MainActivity.this, MainActivity2.class);
         test.putExtra("key",value);
 
