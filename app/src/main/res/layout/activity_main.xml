@@ -19,6 +19,12 @@
         android:layout_height="wrap_content"
         android:text="Play" />
 
+    <TextView
+        android:id="@+id/setQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input a question." />
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
