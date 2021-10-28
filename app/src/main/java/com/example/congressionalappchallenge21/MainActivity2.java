@@ -17,7 +17,8 @@ public class MainActivity2 extends AppCompatActivity {
     Button answer3;
     Button answer4;
 
-    String value;
+    String question;
+    String txtAnswer1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +26,13 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         backButton = (Button)findViewById(R.id.back);
 
-        value = getIntent().getStringExtra("key");
+        question = getIntent().getStringExtra("question");
         TextView setQuestion = (TextView) findViewById(R.id.question);
-        setQuestion.setText(value);
+        setQuestion.setText(question);
 
+        txtAnswer1 = getIntent().getStringExtra("answer1");
         answer1 = (Button)findViewById(R.id.answer1);
-        answer1.setText("Click Me !");
+        answer1.setText(txtAnswer1);
 
         backButton.setOnClickListener(new View.OnClickListener() {
 
