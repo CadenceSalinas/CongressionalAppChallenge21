@@ -7,86 +7,179 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Space
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="241dp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Question?"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/play"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Play" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="241dp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="184dp" />
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question?"
+                android:textAlignment="center"
+                android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/setQuestion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Input a question."
-        android:textSize="16sp"
-        android:textStyle="bold" />
+            <Button
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play" />
 
-    <EditText
-        android:id="@+id/questionText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textVisiblePassword"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="184dp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="33dp" />
+        <TextView
+            android:id="@+id/setQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input a question."
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/setAnswers"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Input your answers."
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/answer1"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textVisiblePassword"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
 
-    <EditText
-        android:id="@+id/answer2"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textVisiblePassword"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/setAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input your answers."
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/answer3"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textVisiblePassword"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <EditText
-        android:id="@+id/answer4"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textVisiblePassword"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>]
+    </ScrollView>
+
+<!--    <Space-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="241dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/question"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Question?"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="24sp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/play"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Play" />-->
+
+<!--    <Space-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="184dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/setQuestion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Input a question."-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/questionText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textVisiblePassword"-->
+<!--        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+
+<!--    <Space-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="33dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/setAnswers"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Input your answers."-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/answer1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textVisiblePassword"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/answer2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textVisiblePassword"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/answer3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textVisiblePassword"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/answer4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textVisiblePassword"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
 
 </LinearLayout>
