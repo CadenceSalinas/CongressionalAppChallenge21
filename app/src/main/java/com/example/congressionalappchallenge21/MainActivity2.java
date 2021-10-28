@@ -29,10 +29,12 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         backButton = (Button)findViewById(R.id.back);
 
+        //question
         question = getIntent().getStringExtra("question");
         TextView setQuestion = (TextView) findViewById(R.id.question);
         setQuestion.setText(question);
 
+        //answers
         txtAnswer1 = getIntent().getStringExtra("answer1");
         answer1 = (Button)findViewById(R.id.answer1);
         answer1.setText(txtAnswer1);

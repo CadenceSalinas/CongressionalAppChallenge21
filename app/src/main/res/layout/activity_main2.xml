@@ -7,11 +7,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity2">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="89dp" />
+
     <TextView
         android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="59dp" />
 
     <Button
         android:id="@+id/answer1"
@@ -19,23 +30,38 @@
         android:layout_height="wrap_content"
         android:text="Button" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
     <Button
         android:id="@+id/answer2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
     <Button
         android:id="@+id/answer3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
 
     <Button
         android:id="@+id/answer4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="186dp" />
 
     <Button
         android:id="@+id/back"
