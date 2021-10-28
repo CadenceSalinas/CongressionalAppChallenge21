@@ -9,7 +9,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="89dp" />
+        android:layout_height="62dp" />
 
     <TextView
         android:id="@+id/question"
@@ -32,7 +32,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="18dp" />
 
     <Button
         android:id="@+id/answer2"
@@ -42,16 +42,17 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="18dp" />
 
     <Button
         android:id="@+id/answer3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
+
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="18dp" />
 
     <Button
         android:id="@+id/answer4"
@@ -61,7 +62,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="186dp" />
+        android:layout_height="187dp" />
 
     <Button
         android:id="@+id/back"
