@@ -19,6 +19,9 @@ public class MainActivity2 extends AppCompatActivity {
 
     String question;
     String txtAnswer1;
+    String txtAnswer2;
+    String txtAnswer3;
+    String txtAnswer4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,18 @@ public class MainActivity2 extends AppCompatActivity {
         txtAnswer1 = getIntent().getStringExtra("answer1");
         answer1 = (Button)findViewById(R.id.answer1);
         answer1.setText(txtAnswer1);
+
+        txtAnswer2 = getIntent().getStringExtra("answer2");
+        answer2 = (Button)findViewById(R.id.answer2);
+        answer2.setText(txtAnswer2);
+
+        txtAnswer3 = getIntent().getStringExtra("answer3");
+        answer3 = (Button)findViewById(R.id.answer3);
+        answer3.setText(txtAnswer3);
+
+        txtAnswer4 = getIntent().getStringExtra("answer4");
+        answer4 = (Button)findViewById(R.id.answer4);
+        answer4.setText(txtAnswer4);
 
         backButton.setOnClickListener(new View.OnClickListener() {
 
