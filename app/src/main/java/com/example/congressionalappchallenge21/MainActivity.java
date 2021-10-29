@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.chip.Chip;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     String setAnswer2;
     String setAnswer3;
     String setAnswer4;
+
+    Chip check1;
+    Chip check2;
+    Chip check3;
+    Chip check4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +66,12 @@ public class MainActivity extends AppCompatActivity {
                 setAnswer4 = answerText4.getText().toString();
                 String answer4 = setAnswer4;
 
+                //set correct answer
+                boolean correct1 = check1.isCheckedIconVisible();
+                boolean correct2 = check2.isCheckedIconVisible();
+                boolean correct3 = check3.isCheckedIconVisible();
+                boolean correct4 = check4.isCheckedIconVisible();
+
 
                 Intent test = new Intent(MainActivity.this, MainActivity2.class);
                 test.putExtra("question",question);
@@ -67,6 +79,12 @@ public class MainActivity extends AppCompatActivity {
                 test.putExtra("answer2",answer2);
                 test.putExtra("answer3",answer3);
                 test.putExtra("answer4",answer4);
+
+                test.putExtra("check1",correct1);
+                test.putExtra("check2",correct2);
+                test.putExtra("check3",correct3);
+                test.putExtra("check4",correct4);
+
                 startActivity(test);
             }
         });
