@@ -24,6 +24,8 @@ public class MainActivity2 extends AppCompatActivity {
     String txtAnswer3;
     String txtAnswer4;
 
+    String correctAnswer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,10 @@ public class MainActivity2 extends AppCompatActivity {
         answer4 = (Button)findViewById(R.id.answer4);
         answer4.setText(txtAnswer4);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+        //set correct answer
+        correctAnswer = txtAnswer1;
+
+                backButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v)
             {
@@ -61,10 +66,66 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-    } //end onCreate
+        //check correct answer
+        answer1.setOnClickListener(new View.OnClickListener() {
 
-    public void correctAnswer(View v)
-    {
-        Log.i("click", "You clicked the correct answer!");
-    }
+            public void onClick(View v)
+            {
+                if(txtAnswer1 == correctAnswer)
+                {
+                    Log.i("click", "You clicked the correct button 1");
+                }
+                else
+                {
+                    Log.i("click", "You clicked the incorrect button 1");
+                }
+            }
+        });
+
+        answer2.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+                if(txtAnswer2 == correctAnswer)
+                {
+                    Log.i("click", "You clicked the correct button 2");
+                }
+                else
+                {
+                    Log.i("click", "You clicked the incorrect button 2");
+                }
+            }
+        });
+
+        answer3.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+                if(txtAnswer3 == correctAnswer)
+                {
+                    Log.i("click", "You clicked the correct button 3");
+                }
+                else
+                {
+                    Log.i("click", "You clicked the incorrect button 3");
+                }
+            }
+        });
+
+        answer4.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+                if(txtAnswer4 == correctAnswer)
+                {
+                    Log.i("click", "You clicked the correct button 4");
+                }
+                else
+                {
+                    Log.i("click", "You clicked the incorrect button 4");
+                }
+            }
+        });
+
+    } //end onCreate
 }
