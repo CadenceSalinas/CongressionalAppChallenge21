@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -59,5 +60,11 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(homeScreen);
             }
         });
+
     } //end onCreate
+
+    public void correctAnswer(View v)
+    {
+        Log.i("click", "You clicked the correct answer!");
+    }
 }

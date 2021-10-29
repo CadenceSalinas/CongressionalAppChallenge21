@@ -97,7 +97,7 @@
                 android:ems="10"
                 android:inputType="textVisiblePassword"
                 tools:ignore="SpeakableTextPresentCheck" />
-        </LinearLayout>]
+        </LinearLayout>
     </ScrollView>
 
 <!--    <Space-->
