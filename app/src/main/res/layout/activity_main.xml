@@ -74,6 +74,12 @@
                 android:inputType="textVisiblePassword"
                 tools:ignore="SpeakableTextPresentCheck" />
 
+            <com.google.android.material.chip.Chip
+                android:id="@+id/check1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkable="true" />
+
             <EditText
                 android:id="@+id/answer2"
                 android:layout_width="match_parent"
@@ -81,6 +87,12 @@
                 android:ems="10"
                 android:inputType="textVisiblePassword"
                 tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/check2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkable="true" />
 
             <EditText
                 android:id="@+id/answer3"
@@ -90,6 +102,12 @@
                 android:inputType="textVisiblePassword"
                 tools:ignore="SpeakableTextPresentCheck" />
 
+            <com.google.android.material.chip.Chip
+                android:id="@+id/check3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkable="true" />
+
             <EditText
                 android:id="@+id/answer4"
                 android:layout_width="match_parent"
@@ -97,6 +115,12 @@
                 android:ems="10"
                 android:inputType="textVisiblePassword"
                 tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/check4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkable="true" />
         </LinearLayout>
     </ScrollView>
 
