@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CongressionalAppChallenge21</string>
+    <string name="app_name">Make Your Own Question and Answers</string>
     <string name="title_activity_questions">Questions</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

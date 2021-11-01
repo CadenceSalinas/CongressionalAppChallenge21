@@ -81,14 +81,14 @@ public class MainActivity2 extends AppCompatActivity {
 //            correctAnswer = txtAnswer4;
 //        }
 //
-//                backButton.setOnClickListener(new View.OnClickListener() {
-//
-//            public void onClick(View v)
-//            {
-//                Intent homeScreen = new Intent(MainActivity2.this, MainActivity.class);
-//                startActivity(homeScreen);
-//            }
-//        });
+                backButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+                Intent homeScreen = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(homeScreen);
+            }
+        });
 //
 //        //check correct answer
 //        answer1.setOnClickListener(new View.OnClickListener() {
