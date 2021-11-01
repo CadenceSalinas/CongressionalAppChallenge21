@@ -29,10 +29,9 @@ public class MainActivity extends AppCompatActivity {
     String setAnswer3;
     String setAnswer4;
 
-    Chip check1;
-    Chip check2;
-    Chip check3;
-    Chip check4;
+//    Chip check1;
+//    Chip check2;
+//    Chip check3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 String answer4 = setAnswer4;
 
                 //set correct answer
-                boolean correct1 = check1.isCheckedIconVisible();
-                boolean correct2 = check2.isCheckedIconVisible();
-                boolean correct3 = check3.isCheckedIconVisible();
-                boolean correct4 = check4.isCheckedIconVisible();
+//                boolean correct1 = check1.isCheckedIconVisible();
+//                boolean correct2 = check2.isCheckedIconVisible();
+//                boolean correct3 = check3.isCheckedIconVisible();
 
 
                 Intent test = new Intent(MainActivity.this, MainActivity2.class);
@@ -80,10 +78,9 @@ public class MainActivity extends AppCompatActivity {
                 test.putExtra("answer3",answer3);
                 test.putExtra("answer4",answer4);
 
-                test.putExtra("check1",correct1);
-                test.putExtra("check2",correct2);
-                test.putExtra("check3",correct3);
-                test.putExtra("check4",correct4);
+//                test.putExtra("check1",correct1);
+//                test.putExtra("check2",correct2);
+//                test.putExtra("check3",correct3);
 
                 startActivity(test);
             }

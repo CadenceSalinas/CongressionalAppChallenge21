@@ -24,7 +24,11 @@ public class MainActivity2 extends AppCompatActivity {
     String txtAnswer3;
     String txtAnswer4;
 
-    String correctAnswer;
+//    String correctAnswer;
+//
+//    Boolean correct1;
+//    Boolean correct2;
+//    Boolean correct3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,78 +58,98 @@ public class MainActivity2 extends AppCompatActivity {
         answer4 = (Button)findViewById(R.id.answer4);
         answer4.setText(txtAnswer4);
 
+        //correct answers
+//        correct1 = getIntent().getBooleanExtra("check1", false);
+//        correct2 = getIntent().getBooleanExtra("check2", false);
+//        correct3 = getIntent().getBooleanExtra("check3", false);
+
         //set correct answer
-        correctAnswer = txtAnswer1;
-
-                backButton.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-                Intent homeScreen = new Intent(MainActivity2.this, MainActivity.class);
-                startActivity(homeScreen);
-            }
-        });
-
-        //check correct answer
-        answer1.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-                if(txtAnswer1 == correctAnswer)
-                {
-                    Log.i("click", "You clicked the correct button 1");
-                }
-                else
-                {
-                    Log.i("click", "You clicked the incorrect button 1");
-                }
-            }
-        });
-
-        answer2.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-                if(txtAnswer2 == correctAnswer)
-                {
-                    Log.i("click", "You clicked the correct button 2");
-                }
-                else
-                {
-                    Log.i("click", "You clicked the incorrect button 2");
-                }
-            }
-        });
-
-        answer3.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-                if(txtAnswer3 == correctAnswer)
-                {
-                    Log.i("click", "You clicked the correct button 3");
-                }
-                else
-                {
-                    Log.i("click", "You clicked the incorrect button 3");
-                }
-            }
-        });
-
-        answer4.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-                if(txtAnswer4 == correctAnswer)
-                {
-                    Log.i("click", "You clicked the correct button 4");
-                }
-                else
-                {
-                    Log.i("click", "You clicked the incorrect button 4");
-                }
-            }
-        });
+//        if(correct1)
+//        {
+//            correctAnswer = txtAnswer1;
+//        }
+//        else if(correct2)
+//        {
+//            correctAnswer = txtAnswer2;
+//        }
+//        else if(correct3)
+//        {
+//            correctAnswer = txtAnswer3;
+//        }
+//        else
+//        {
+//            correctAnswer = txtAnswer4;
+//        }
+//
+//                backButton.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v)
+//            {
+//                Intent homeScreen = new Intent(MainActivity2.this, MainActivity.class);
+//                startActivity(homeScreen);
+//            }
+//        });
+//
+//        //check correct answer
+//        answer1.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v)
+//            {
+//                if(txtAnswer1 == correctAnswer)
+//                {
+//                    Log.i("click", "You clicked the correct button 1");
+//                }
+//                else
+//                {
+//                    Log.i("click", "You clicked the incorrect button 1");
+//                }
+//            }
+//        });
+//
+//        answer2.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v)
+//            {
+//                if(txtAnswer2 == correctAnswer)
+//                {
+//                    Log.i("click", "You clicked the correct button 2");
+//                }
+//                else
+//                {
+//                    Log.i("click", "You clicked the incorrect button 2");
+//                }
+//            }
+//        });
+//
+//        answer3.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v)
+//            {
+//                if(txtAnswer3 == correctAnswer)
+//                {
+//                    Log.i("click", "You clicked the correct button 3");
+//                }
+//                else
+//                {
+//                    Log.i("click", "You clicked the incorrect button 3");
+//                }
+//            }
+//        });
+//
+//        answer4.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v)
+//            {
+//                if(txtAnswer4 == correctAnswer)
+//                {
+//                    Log.i("click", "You clicked the correct button 4");
+//                }
+//                else
+//                {
+//                    Log.i("click", "You clicked the incorrect button 4");
+//                }
+//            }
+//        });
 
     } //end onCreate
 }
