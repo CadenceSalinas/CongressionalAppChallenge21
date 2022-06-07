@@ -1,4 +1,7 @@
 # CongressionalAppChallenge21
-My submission for the Congressional App Contest 2021. It's a poorly made study app with multiple screens and text fields. 
+My submission for the Congressional App Contest 2021. 
 
-Enviroment used - Android Studio
+Project Name: CAC Submission
+Class Name: Advanced Java Topics
+Date: October 29, 2021
+Assignment Description: Create and submit a project to the Congressional App Contest 2021 in Android Studio.
